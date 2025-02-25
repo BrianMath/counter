@@ -12,12 +12,19 @@ function decNumber(decrement, buttonElement) {
 
 	// Animação \\
 
+	const isMobile = window.matchMedia("(max-width: 425px)").matches;
+
+	const randomLeft = isMobile ? 
+					   Math.random() * 90 : 
+					   Math.random() * 60;
+
 	// Cria um novo ícone de -
 	let newMinus = document.createElement("img");
 	newMinus.src = "minus.svg";
 	newMinus.classList.add("dive");
 	newMinus.style.bottom = `${Math.random() * 50}%`;
-	newMinus.style.left = `${Math.random() * 60}%`;
+	newMinus.style.left = `${randomLeft}%`;
+	newMinus.style.zIndex = 2;
 
 	// Adiciona o - ao DOM, isto é, ao botão específico que invocou a animação
 	buttonElement.appendChild(newMinus);
@@ -37,12 +44,19 @@ function incNumber(increment, buttonElement) {
 
 	// Animação \\
 
+	const isMobile = window.matchMedia("(max-width: 425px)").matches;
+
+	const randomLeft = isMobile ? 
+					   Math.random() * 90 : 
+					   Math.random() * 60;
+
 	// Cria um novo ícone de +
 	let newPlus = document.createElement("img");
 	newPlus.src = "plus.svg";
 	newPlus.classList.add("float");
 	newPlus.style.top = `${Math.random() * 50}%`;
-	newPlus.style.left = `${Math.random() * 60}%`;
+	newPlus.style.left = `${randomLeft}%`;
+	newPlus.style.zIndex = 2;
 
 	// Adiciona o + ao DOM, isto é, ao botão específico que invocou a animação
 	buttonElement.appendChild(newPlus);
