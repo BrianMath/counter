@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Primary Meta Tags -->
+	<title>Contador de números | BrianMath</title>
+	<meta name="title" content="Contador de números | BrianMath">
+	<meta name="description" content="Site com um contador simples que incrementa, decrementa e zera. O número é salvo no armazenamento local do navegador, então não é perdido entre sessões.">
+
+	<!-- Open Graph / Facebook / Whatsapp -->
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://brianmath.github.io/counter" />
+	<meta property="og:title" content="Contador de números | BrianMath" />
+	<meta property="og:description" content="Site com um contador simples que incrementa, decrementa e zera. O número é salvo no armazenamento local do navegador, então não é perdido entre sessões." />
+	<meta property="og:image" content="https://i.imgur.com/DVrY15P.png" />
+	<meta property="og:image:alt" content="Logo do site">
+	<meta property="og:image:width" content="1920">
+	<meta property="og:image:height" content="1080">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://brianmath.github.io/counter" />
+	<meta property="twitter:title" content="Contador de números | BrianMath" />
+	<meta property="twitter:description" content="Site com um contador simples que incrementa, decrementa e zera. O número é salvo no armazenamento local do navegador, então não é perdido entre sessões." />
+	<meta property="twitter:image" content="https://i.imgur.com/DVrY15P.png" />
+
+	<!-- Meta Tags Generated with https://metatags.io -->
+
+	<!-- Fonte Funnel Sans -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+	<section id="counter">
+		<h1>Contador</h1>
+		<p id="number"><b>0</b></p>
+	</section>
+
+	<section id="buttons">
+		<button class="btnBig btnDec" onclick="decNumber(5, this)">
+			-5
+		</button>
+
+		<button class="btnBig btnDec" onclick="decNumber(1, this)">
+			-1
+		</button>
+		
+		<button class="btnZero" onclick="resetNumber(this)">
+			0
+		</button>
+		
+		<button class="btnBig btnInc" onclick="incNumber(1, this)">
+			+1
+		</button>
+		
+		<button class="btnBig btnInc" onclick="incNumber(5, this)">
+			+5
+		</button>
+	</section>
+
+	<footer>
+		<a target="_blank" href="https://icons8.com/icon/gCiuDtPGHwGJ/counter" rel="noreferrer noopener">Counter</a> icon by <a target="_blank" href="https://icons8.com" rel="noreferrer noopener">Icons8</a>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
